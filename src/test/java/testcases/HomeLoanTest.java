@@ -60,7 +60,7 @@ public class HomeLoanTest extends Base {
 		homePage.selectLoanTenure(Integer.parseInt(prop.getProperty("homeLoanTenureEnter")));
 		Assert.assertFalse(loanAmount.equals(homePage.loanAmountInputBox()));
 	}
-	@Test(enabled=false)
+	@Test()
 	public void checkLoanEMIAndInterestPayable() throws InterruptedException {
 		homePage.clickOnHomeLoan();
 		homePage. enterLoanAmount(prop.getProperty("homeLoanAmountEnter"));

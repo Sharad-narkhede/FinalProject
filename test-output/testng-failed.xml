@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="edge"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="testcases.UIFunctionalityCheckOfLoanCalculatorTest">
+        <methods>
+          <include name="checkScaleChange"/>
+          <include name="confiBrowser"/>
+          <include name="checkInputBoxIsEnable"/>
+          <include name="loanCalculatorObj"/>
+          <include name="CloseBrowser"/>
+          <include name="checkSliderMoveOrNot"/>
+        </methods>
+      </class> <!-- testcases.UIFunctionalityCheckOfLoanCalculatorTest -->
       <class name="testcases.UIFunctionalityCheckOfEmiCalculatorTest">
         <methods>
           <include name="checkInputBoxIsEnable"/>
@@ -23,6 +33,18 @@
           <include name="checkSliderMoveOrNot"/>
         </methods>
       </class> <!-- testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage -->
+      <class name="testcases.HomeLoanTest">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="HomePageObj"/>
+          <include name="extractDataYear"/>
+          <include name="configBrowser"/>
+          <include name="enterHomeLoanAmount"/>
+          <include name="chekDefaultCarLoanEMIValues"/>
+          <include name="WriteExcelClass"/>
+          <include name="EnterNegativeValues"/>
+        </methods>
+      </class> <!-- testcases.HomeLoanTest -->
       <class name="testcases.CarLoansTest">
         <methods>
           <include name="HomePageObj"/>
@@ -34,28 +56,6 @@
           <include name="EnterNegativeValues"/>
         </methods>
       </class> <!-- testcases.CarLoansTest -->
-      <class name="testcases.UIFunctionalityCheckOfLoanCalculatorTest">
-        <methods>
-          <include name="checkScaleChange"/>
-          <include name="confiBrowser"/>
-          <include name="checkInputBoxIsEnable"/>
-          <include name="loanCalculatorObj"/>
-          <include name="CloseBrowser"/>
-          <include name="checkSliderMoveOrNot"/>
-        </methods>
-      </class> <!-- testcases.UIFunctionalityCheckOfLoanCalculatorTest -->
-      <class name="testcases.HomeLoanTest">
-        <methods>
-          <include name="CloseBrowser"/>
-          <include name="HomePageObj"/>
-          <include name="extractDataYear"/>
-          <include name="configBrowser"/>
-          <include name="chekDefaultCarLoanEMIValues"/>
-          <include name="enterHomeLoanAmount"/>
-          <include name="WriteExcelClass"/>
-          <include name="EnterNegativeValues"/>
-        </methods>
-      </class> <!-- testcases.HomeLoanTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

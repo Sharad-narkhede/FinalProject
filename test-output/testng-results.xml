@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
+<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-16T10:05:17 IST" name="Suite" finished-at="2025-07-16T10:07:18 IST" duration-ms="120811">
+  <suite started-at="2025-07-16T16:01:08 IST" name="Suite" finished-at="2025-07-16T16:03:25 IST" duration-ms="137452">
     <groups>
     </groups>
-    <test started-at="2025-07-16T10:05:17 IST" name="Test" finished-at="2025-07-16T10:07:18 IST" duration-ms="120811">
+    <test started-at="2025-07-16T16:01:08 IST" name="Test" finished-at="2025-07-16T16:03:25 IST" duration-ms="137452">
       <class name="testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage">
-        <test-method is-config="true" signature="confiBrowser(java.lang.String)[pri:0, instance:testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage@46fa7c39]" started-at="2025-07-16T10:06:54 IST" name="confiBrowser" finished-at="2025-07-16T10:06:59 IST" duration-ms="5460" status="PASS">
+        <test-method is-config="true" signature="confiBrowser(java.lang.String)[pri:0, instance:testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage@46fa7c39]" started-at="2025-07-16T16:02:49 IST" name="confiBrowser" finished-at="2025-07-16T16:02:56 IST" duration-ms="7351" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,29 +18,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- confiBrowser -->
-        <test-method is-config="true" signature="loanCalculatorObj()[pri:0, instance:testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage@46fa7c39]" started-at="2025-07-16T10:06:59 IST" name="loanCalculatorObj" finished-at="2025-07-16T10:07:00 IST" duration-ms="453" status="PASS">
+        <test-method is-config="true" signature="loanCalculatorObj()[pri:0, instance:testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage@46fa7c39]" started-at="2025-07-16T16:02:56 IST" name="loanCalculatorObj" finished-at="2025-07-16T16:03:01 IST" duration-ms="4393" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loanCalculatorObj -->
-        <test-method signature="checkInputBoxIsEnable()[pri:0, instance:testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage@46fa7c39]" started-at="2025-07-16T10:07:00 IST" name="checkInputBoxIsEnable" finished-at="2025-07-16T10:07:00 IST" duration-ms="198" status="PASS">
+        <test-method signature="checkInputBoxIsEnable()[pri:0, instance:testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage@46fa7c39]" started-at="2025-07-16T16:03:01 IST" name="checkInputBoxIsEnable" finished-at="2025-07-16T16:03:01 IST" duration-ms="340" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInputBoxIsEnable -->
-        <test-method is-config="true" signature="loanCalculatorObj()[pri:0, instance:testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage@46fa7c39]" started-at="2025-07-16T10:07:00 IST" name="loanCalculatorObj" finished-at="2025-07-16T10:07:00 IST" duration-ms="244" status="PASS">
+        <test-method is-config="true" signature="loanCalculatorObj()[pri:0, instance:testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage@46fa7c39]" started-at="2025-07-16T16:03:01 IST" name="loanCalculatorObj" finished-at="2025-07-16T16:03:05 IST" duration-ms="4307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loanCalculatorObj -->
-        <test-method signature="checkSliderMoveOrNot()[pri:0, instance:testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage@46fa7c39]" started-at="2025-07-16T10:07:00 IST" name="checkSliderMoveOrNot" finished-at="2025-07-16T10:07:03 IST" duration-ms="3156" status="PASS">
+        <test-method signature="checkSliderMoveOrNot()[pri:0, instance:testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage@46fa7c39]" started-at="2025-07-16T16:03:05 IST" name="checkSliderMoveOrNot" finished-at="2025-07-16T16:03:09 IST" duration-ms="3680" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSliderMoveOrNot -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage@46fa7c39]" started-at="2025-07-16T10:07:03 IST" name="CloseBrowser" finished-at="2025-07-16T10:07:06 IST" duration-ms="2200" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage@46fa7c39]" started-at="2025-07-16T16:03:09 IST" name="CloseBrowser" finished-at="2025-07-16T16:03:12 IST" duration-ms="2409" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage -->
       <class name="testcases.UIFunctionalityCheckOfLoanCalculatorTest">
-        <test-method is-config="true" signature="confiBrowser(java.lang.String)[pri:0, instance:testcases.UIFunctionalityCheckOfLoanCalculatorTest@1fb700ee]" started-at="2025-07-16T10:07:06 IST" name="confiBrowser" finished-at="2025-07-16T10:07:11 IST" duration-ms="5081" status="PASS">
+        <test-method is-config="true" signature="confiBrowser(java.lang.String)[pri:0, instance:testcases.UIFunctionalityCheckOfLoanCalculatorTest@1fb700ee]" started-at="2025-07-16T16:03:12 IST" name="confiBrowser" finished-at="2025-07-16T16:03:14 IST" duration-ms="2648" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,37 +51,37 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- confiBrowser -->
-        <test-method is-config="true" signature="loanCalculatorObj()[pri:0, instance:testcases.UIFunctionalityCheckOfLoanCalculatorTest@1fb700ee]" started-at="2025-07-16T10:07:11 IST" name="loanCalculatorObj" finished-at="2025-07-16T10:07:11 IST" duration-ms="416" status="PASS">
+        <test-method is-config="true" signature="loanCalculatorObj()[pri:0, instance:testcases.UIFunctionalityCheckOfLoanCalculatorTest@1fb700ee]" started-at="2025-07-16T16:03:14 IST" name="loanCalculatorObj" finished-at="2025-07-16T16:03:17 IST" duration-ms="2875" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loanCalculatorObj -->
-        <test-method signature="checkInputBoxIsEnable()[pri:0, instance:testcases.UIFunctionalityCheckOfLoanCalculatorTest@1fb700ee]" started-at="2025-07-16T10:07:11 IST" name="checkInputBoxIsEnable" finished-at="2025-07-16T10:07:11 IST" duration-ms="209" status="PASS">
+        <test-method signature="checkInputBoxIsEnable()[pri:0, instance:testcases.UIFunctionalityCheckOfLoanCalculatorTest@1fb700ee]" started-at="2025-07-16T16:03:17 IST" name="checkInputBoxIsEnable" finished-at="2025-07-16T16:03:17 IST" duration-ms="339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInputBoxIsEnable -->
-        <test-method is-config="true" signature="loanCalculatorObj()[pri:0, instance:testcases.UIFunctionalityCheckOfLoanCalculatorTest@1fb700ee]" started-at="2025-07-16T10:07:11 IST" name="loanCalculatorObj" finished-at="2025-07-16T10:07:12 IST" duration-ms="287" status="PASS">
+        <test-method is-config="true" signature="loanCalculatorObj()[pri:0, instance:testcases.UIFunctionalityCheckOfLoanCalculatorTest@1fb700ee]" started-at="2025-07-16T16:03:17 IST" name="loanCalculatorObj" finished-at="2025-07-16T16:03:18 IST" duration-ms="863" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loanCalculatorObj -->
-        <test-method signature="checkScaleChange()[pri:0, instance:testcases.UIFunctionalityCheckOfLoanCalculatorTest@1fb700ee]" started-at="2025-07-16T10:07:12 IST" name="checkScaleChange" finished-at="2025-07-16T10:07:12 IST" duration-ms="433" status="PASS">
+        <test-method signature="checkScaleChange()[pri:0, instance:testcases.UIFunctionalityCheckOfLoanCalculatorTest@1fb700ee]" started-at="2025-07-16T16:03:18 IST" name="checkScaleChange" finished-at="2025-07-16T16:03:19 IST" duration-ms="638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkScaleChange -->
-        <test-method is-config="true" signature="loanCalculatorObj()[pri:0, instance:testcases.UIFunctionalityCheckOfLoanCalculatorTest@1fb700ee]" started-at="2025-07-16T10:07:12 IST" name="loanCalculatorObj" finished-at="2025-07-16T10:07:12 IST" duration-ms="343" status="PASS">
+        <test-method is-config="true" signature="loanCalculatorObj()[pri:0, instance:testcases.UIFunctionalityCheckOfLoanCalculatorTest@1fb700ee]" started-at="2025-07-16T16:03:19 IST" name="loanCalculatorObj" finished-at="2025-07-16T16:03:19 IST" duration-ms="385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loanCalculatorObj -->
-        <test-method signature="checkSliderMoveOrNot()[pri:0, instance:testcases.UIFunctionalityCheckOfLoanCalculatorTest@1fb700ee]" started-at="2025-07-16T10:07:12 IST" name="checkSliderMoveOrNot" finished-at="2025-07-16T10:07:16 IST" duration-ms="3193" status="PASS">
+        <test-method signature="checkSliderMoveOrNot()[pri:0, instance:testcases.UIFunctionalityCheckOfLoanCalculatorTest@1fb700ee]" started-at="2025-07-16T16:03:19 IST" name="checkSliderMoveOrNot" finished-at="2025-07-16T16:03:23 IST" duration-ms="3485" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSliderMoveOrNot -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:testcases.UIFunctionalityCheckOfLoanCalculatorTest@1fb700ee]" started-at="2025-07-16T10:07:16 IST" name="CloseBrowser" finished-at="2025-07-16T10:07:18 IST" duration-ms="2292" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:testcases.UIFunctionalityCheckOfLoanCalculatorTest@1fb700ee]" started-at="2025-07-16T16:03:23 IST" name="CloseBrowser" finished-at="2025-07-16T16:03:25 IST" duration-ms="2626" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- testcases.UIFunctionalityCheckOfLoanCalculatorTest -->
       <class name="testcases.UIFunctionalityCheckOfEmiCalculatorTest">
-        <test-method is-config="true" signature="confiBrowser(java.lang.String)[pri:0, instance:testcases.UIFunctionalityCheckOfEmiCalculatorTest@53aad5d5]" started-at="2025-07-16T10:06:43 IST" name="confiBrowser" finished-at="2025-07-16T10:06:47 IST" duration-ms="4376" status="PASS">
+        <test-method is-config="true" signature="confiBrowser(java.lang.String)[pri:0, instance:testcases.UIFunctionalityCheckOfEmiCalculatorTest@53aad5d5]" started-at="2025-07-16T16:02:34 IST" name="confiBrowser" finished-at="2025-07-16T16:02:40 IST" duration-ms="5449" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -92,37 +92,37 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- confiBrowser -->
-        <test-method is-config="true" signature="loanCalculatorObj()[pri:0, instance:testcases.UIFunctionalityCheckOfEmiCalculatorTest@53aad5d5]" started-at="2025-07-16T10:06:47 IST" name="loanCalculatorObj" finished-at="2025-07-16T10:06:47 IST" duration-ms="437" status="PASS">
+        <test-method is-config="true" signature="loanCalculatorObj()[pri:0, instance:testcases.UIFunctionalityCheckOfEmiCalculatorTest@53aad5d5]" started-at="2025-07-16T16:02:40 IST" name="loanCalculatorObj" finished-at="2025-07-16T16:02:41 IST" duration-ms="762" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loanCalculatorObj -->
-        <test-method signature="checkInputBoxIsEnable()[pri:0, instance:testcases.UIFunctionalityCheckOfEmiCalculatorTest@53aad5d5]" started-at="2025-07-16T10:06:47 IST" name="checkInputBoxIsEnable" finished-at="2025-07-16T10:06:48 IST" duration-ms="165" status="PASS">
+        <test-method signature="checkInputBoxIsEnable()[pri:0, instance:testcases.UIFunctionalityCheckOfEmiCalculatorTest@53aad5d5]" started-at="2025-07-16T16:02:41 IST" name="checkInputBoxIsEnable" finished-at="2025-07-16T16:02:41 IST" duration-ms="287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInputBoxIsEnable -->
-        <test-method is-config="true" signature="loanCalculatorObj()[pri:0, instance:testcases.UIFunctionalityCheckOfEmiCalculatorTest@53aad5d5]" started-at="2025-07-16T10:06:48 IST" name="loanCalculatorObj" finished-at="2025-07-16T10:06:48 IST" duration-ms="273" status="PASS">
+        <test-method is-config="true" signature="loanCalculatorObj()[pri:0, instance:testcases.UIFunctionalityCheckOfEmiCalculatorTest@53aad5d5]" started-at="2025-07-16T16:02:41 IST" name="loanCalculatorObj" finished-at="2025-07-16T16:02:41 IST" duration-ms="499" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loanCalculatorObj -->
-        <test-method signature="checkScaleChange()[pri:0, instance:testcases.UIFunctionalityCheckOfEmiCalculatorTest@53aad5d5]" started-at="2025-07-16T10:06:48 IST" name="checkScaleChange" finished-at="2025-07-16T10:06:48 IST" duration-ms="410" status="PASS">
+        <test-method signature="checkScaleChange()[pri:0, instance:testcases.UIFunctionalityCheckOfEmiCalculatorTest@53aad5d5]" started-at="2025-07-16T16:02:41 IST" name="checkScaleChange" finished-at="2025-07-16T16:02:42 IST" duration-ms="945" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkScaleChange -->
-        <test-method is-config="true" signature="loanCalculatorObj()[pri:0, instance:testcases.UIFunctionalityCheckOfEmiCalculatorTest@53aad5d5]" started-at="2025-07-16T10:06:48 IST" name="loanCalculatorObj" finished-at="2025-07-16T10:06:49 IST" duration-ms="240" status="PASS">
+        <test-method is-config="true" signature="loanCalculatorObj()[pri:0, instance:testcases.UIFunctionalityCheckOfEmiCalculatorTest@53aad5d5]" started-at="2025-07-16T16:02:42 IST" name="loanCalculatorObj" finished-at="2025-07-16T16:02:43 IST" duration-ms="587" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loanCalculatorObj -->
-        <test-method signature="checkSliderMoveOrNot()[pri:0, instance:testcases.UIFunctionalityCheckOfEmiCalculatorTest@53aad5d5]" started-at="2025-07-16T10:06:49 IST" name="checkSliderMoveOrNot" finished-at="2025-07-16T10:06:52 IST" duration-ms="3186" status="PASS">
+        <test-method signature="checkSliderMoveOrNot()[pri:0, instance:testcases.UIFunctionalityCheckOfEmiCalculatorTest@53aad5d5]" started-at="2025-07-16T16:02:43 IST" name="checkSliderMoveOrNot" finished-at="2025-07-16T16:02:47 IST" duration-ms="3612" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSliderMoveOrNot -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:testcases.UIFunctionalityCheckOfEmiCalculatorTest@53aad5d5]" started-at="2025-07-16T10:06:52 IST" name="CloseBrowser" finished-at="2025-07-16T10:06:54 IST" duration-ms="2122" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:testcases.UIFunctionalityCheckOfEmiCalculatorTest@53aad5d5]" started-at="2025-07-16T16:02:47 IST" name="CloseBrowser" finished-at="2025-07-16T16:02:49 IST" duration-ms="2562" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- testcases.UIFunctionalityCheckOfEmiCalculatorTest -->
       <class name="testcases.HomeLoanTest">
-        <test-method is-config="true" signature="configBrowser(java.lang.String)[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T10:05:53 IST" name="configBrowser" finished-at="2025-07-16T10:06:01 IST" duration-ms="8013" status="PASS">
+        <test-method is-config="true" signature="configBrowser(java.lang.String)[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T16:01:26 IST" name="configBrowser" finished-at="2025-07-16T16:01:36 IST" duration-ms="10334" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -133,61 +133,73 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBrowser -->
-        <test-method is-config="true" signature="HomePageObj()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T10:06:01 IST" name="HomePageObj" finished-at="2025-07-16T10:06:01 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HomePageObj -->
-        <test-method is-config="true" signature="WriteExcelClass()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T10:06:01 IST" name="WriteExcelClass" finished-at="2025-07-16T10:06:01 IST" duration-ms="37" status="PASS">
+        <test-method is-config="true" signature="WriteExcelClass()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T16:01:36 IST" name="WriteExcelClass" finished-at="2025-07-16T16:01:36 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WriteExcelClass -->
-        <test-method signature="EnterNegativeValues()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T10:06:01 IST" name="EnterNegativeValues" finished-at="2025-07-16T10:06:07 IST" duration-ms="6149" status="PASS">
+        <test-method is-config="true" signature="HomePageObj()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T16:01:36 IST" name="HomePageObj" finished-at="2025-07-16T16:01:36 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePageObj -->
+        <test-method signature="EnterNegativeValues()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T16:01:36 IST" name="EnterNegativeValues" finished-at="2025-07-16T16:01:43 IST" duration-ms="6347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnterNegativeValues -->
-        <test-method is-config="true" signature="HomePageObj()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T10:06:07 IST" name="HomePageObj" finished-at="2025-07-16T10:06:07 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="HomePageObj()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T16:01:43 IST" name="HomePageObj" finished-at="2025-07-16T16:01:43 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomePageObj -->
-        <test-method is-config="true" signature="WriteExcelClass()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T10:06:07 IST" name="WriteExcelClass" finished-at="2025-07-16T10:06:07 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="WriteExcelClass()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T16:01:43 IST" name="WriteExcelClass" finished-at="2025-07-16T16:01:43 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WriteExcelClass -->
-        <test-method signature="chekDefaultCarLoanEMIValues()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T10:06:07 IST" name="chekDefaultCarLoanEMIValues" finished-at="2025-07-16T10:06:11 IST" duration-ms="4210" status="PASS">
+        <test-method signature="checkLoanEMIAndInterestPayable()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T16:01:43 IST" name="checkLoanEMIAndInterestPayable" finished-at="2025-07-16T16:01:49 IST" duration-ms="6653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLoanEMIAndInterestPayable -->
+        <test-method is-config="true" signature="HomePageObj()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T16:01:49 IST" name="HomePageObj" finished-at="2025-07-16T16:01:49 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePageObj -->
+        <test-method is-config="true" signature="WriteExcelClass()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T16:01:49 IST" name="WriteExcelClass" finished-at="2025-07-16T16:01:49 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WriteExcelClass -->
+        <test-method signature="chekDefaultCarLoanEMIValues()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T16:01:49 IST" name="chekDefaultCarLoanEMIValues" finished-at="2025-07-16T16:01:54 IST" duration-ms="4426" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chekDefaultCarLoanEMIValues -->
-        <test-method is-config="true" signature="HomePageObj()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T10:06:11 IST" name="HomePageObj" finished-at="2025-07-16T10:06:11 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="HomePageObj()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T16:01:54 IST" name="HomePageObj" finished-at="2025-07-16T16:01:54 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomePageObj -->
-        <test-method signature="enterHomeLoanAmount()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T10:06:11 IST" name="enterHomeLoanAmount" finished-at="2025-07-16T10:06:17 IST" duration-ms="5785" status="PASS">
+        <test-method is-config="true" signature="WriteExcelClass()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T16:01:54 IST" name="WriteExcelClass" finished-at="2025-07-16T16:01:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WriteExcelClass -->
+        <test-method signature="enterHomeLoanAmount()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T16:01:54 IST" name="enterHomeLoanAmount" finished-at="2025-07-16T16:02:00 IST" duration-ms="6661" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterHomeLoanAmount -->
-        <test-method is-config="true" signature="WriteExcelClass()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T10:06:11 IST" name="WriteExcelClass" finished-at="2025-07-16T10:06:11 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WriteExcelClass -->
-        <test-method is-config="true" signature="HomePageObj()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T10:06:17 IST" name="HomePageObj" finished-at="2025-07-16T10:06:17 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="HomePageObj()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T16:02:00 IST" name="HomePageObj" finished-at="2025-07-16T16:02:00 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomePageObj -->
-        <test-method is-config="true" signature="WriteExcelClass()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T10:06:17 IST" name="WriteExcelClass" finished-at="2025-07-16T10:06:17 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="WriteExcelClass()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T16:02:00 IST" name="WriteExcelClass" finished-at="2025-07-16T16:02:00 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WriteExcelClass -->
-        <test-method signature="extractDataYear()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T10:06:17 IST" name="extractDataYear" finished-at="2025-07-16T10:06:40 IST" duration-ms="22638" status="PASS">
+        <test-method signature="extractDataYear()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T16:02:00 IST" name="extractDataYear" finished-at="2025-07-16T16:02:31 IST" duration-ms="30497" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extractDataYear -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T10:06:40 IST" name="CloseBrowser" finished-at="2025-07-16T10:06:43 IST" duration-ms="2729" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:testcases.HomeLoanTest@1329eff]" started-at="2025-07-16T16:02:31 IST" name="CloseBrowser" finished-at="2025-07-16T16:02:34 IST" duration-ms="3587" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- testcases.HomeLoanTest -->
       <class name="testcases.CarLoansTest">
-        <test-method is-config="true" signature="confiBrowser(java.lang.String)[pri:0, instance:testcases.CarLoansTest@36d585c]" started-at="2025-07-16T10:05:17 IST" name="confiBrowser" finished-at="2025-07-16T10:05:27 IST" duration-ms="9674" status="PASS">
+        <test-method is-config="true" signature="confiBrowser(java.lang.String)[pri:0, instance:testcases.CarLoansTest@36d585c]" started-at="2025-07-16T16:01:08 IST" name="confiBrowser" finished-at="2025-07-16T16:01:15 IST" duration-ms="6554" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -198,39 +210,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- confiBrowser -->
-        <test-method is-config="true" signature="HomePageObj()[pri:0, instance:testcases.CarLoansTest@36d585c]" started-at="2025-07-16T10:05:27 IST" name="HomePageObj" finished-at="2025-07-16T10:05:27 IST" duration-ms="45" status="PASS">
+        <test-method is-config="true" signature="HomePageObj()[pri:0, instance:testcases.CarLoansTest@36d585c]" started-at="2025-07-16T16:01:15 IST" name="HomePageObj" finished-at="2025-07-16T16:01:15 IST" duration-ms="52" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomePageObj -->
-        <test-method signature="EnterNegativeValues()[pri:0, instance:testcases.CarLoansTest@36d585c]" started-at="2025-07-16T10:05:27 IST" name="EnterNegativeValues" finished-at="2025-07-16T10:05:33 IST" duration-ms="6306" status="PASS">
+        <test-method signature="EnterNegativeValues()[pri:0, instance:testcases.CarLoansTest@36d585c]" started-at="2025-07-16T16:01:15 IST" name="EnterNegativeValues" finished-at="2025-07-16T16:01:17 IST" duration-ms="2696" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnterNegativeValues -->
-        <test-method is-config="true" signature="HomePageObj()[pri:0, instance:testcases.CarLoansTest@36d585c]" started-at="2025-07-16T10:05:33 IST" name="HomePageObj" finished-at="2025-07-16T10:05:33 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="HomePageObj()[pri:0, instance:testcases.CarLoansTest@36d585c]" started-at="2025-07-16T16:01:17 IST" name="HomePageObj" finished-at="2025-07-16T16:01:17 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomePageObj -->
-        <test-method signature="checkLoanEMIAndInterestPayable()[pri:0, instance:testcases.CarLoansTest@36d585c]" started-at="2025-07-16T10:05:33 IST" name="checkLoanEMIAndInterestPayable" finished-at="2025-07-16T10:05:39 IST" duration-ms="6232" status="PASS">
+        <test-method signature="checkLoanEMIAndInterestPayable()[pri:0, instance:testcases.CarLoansTest@36d585c]" started-at="2025-07-16T16:01:17 IST" name="checkLoanEMIAndInterestPayable" finished-at="2025-07-16T16:01:20 IST" duration-ms="2782" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLoanEMIAndInterestPayable -->
-        <test-method is-config="true" signature="HomePageObj()[pri:0, instance:testcases.CarLoansTest@36d585c]" started-at="2025-07-16T10:05:39 IST" name="HomePageObj" finished-at="2025-07-16T10:05:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="HomePageObj()[pri:0, instance:testcases.CarLoansTest@36d585c]" started-at="2025-07-16T16:01:20 IST" name="HomePageObj" finished-at="2025-07-16T16:01:20 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomePageObj -->
-        <test-method signature="chekDefaultCarLoanEMIValues()[pri:0, instance:testcases.CarLoansTest@36d585c]" started-at="2025-07-16T10:05:39 IST" name="chekDefaultCarLoanEMIValues" finished-at="2025-07-16T10:05:44 IST" duration-ms="4530" status="PASS">
+        <test-method signature="chekDefaultCarLoanEMIValues()[pri:0, instance:testcases.CarLoansTest@36d585c]" started-at="2025-07-16T16:01:20 IST" name="chekDefaultCarLoanEMIValues" finished-at="2025-07-16T16:01:21 IST" duration-ms="641" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chekDefaultCarLoanEMIValues -->
-        <test-method is-config="true" signature="HomePageObj()[pri:0, instance:testcases.CarLoansTest@36d585c]" started-at="2025-07-16T10:05:44 IST" name="HomePageObj" finished-at="2025-07-16T10:05:44 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="HomePageObj()[pri:0, instance:testcases.CarLoansTest@36d585c]" started-at="2025-07-16T16:01:21 IST" name="HomePageObj" finished-at="2025-07-16T16:01:21 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomePageObj -->
-        <test-method signature="enterCarLoanAmount()[pri:0, instance:testcases.CarLoansTest@36d585c]" started-at="2025-07-16T10:05:44 IST" name="enterCarLoanAmount" finished-at="2025-07-16T10:05:50 IST" duration-ms="6188" status="PASS">
+        <test-method signature="enterCarLoanAmount()[pri:0, instance:testcases.CarLoansTest@36d585c]" started-at="2025-07-16T16:01:21 IST" name="enterCarLoanAmount" finished-at="2025-07-16T16:01:24 IST" duration-ms="2758" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterCarLoanAmount -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:testcases.CarLoansTest@36d585c]" started-at="2025-07-16T10:05:50 IST" name="CloseBrowser" finished-at="2025-07-16T10:05:53 IST" duration-ms="3005" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:testcases.CarLoansTest@36d585c]" started-at="2025-07-16T16:01:24 IST" name="CloseBrowser" finished-at="2025-07-16T16:01:26 IST" duration-ms="2305" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
