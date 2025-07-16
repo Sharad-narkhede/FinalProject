@@ -1,0 +1,958 @@
+<html>
+<head>
+<title>TestNG:  EdgeTests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>EdgeTests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/16</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jul 16 00:12:43 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>27638 seconds (27638868 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.UIFunctionalityCheckOfLoanCalculatorTest.confiBrowser()'><b>confiBrowser</b><br>Test class: testcases.UIFunctionalityCheckOfLoanCalculatorTest<br>Parameters: edge</td>
+<td><div><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.UIFunctionalityCheckOfLoanCalculatorTest.confiBrowser(UIFunctionalityCheckOfLoanCalculatorTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1803036954", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1803036954'><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.UIFunctionalityCheckOfLoanCalculatorTest.confiBrowser(UIFunctionalityCheckOfLoanCalculatorTest.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>4054</td>
+<td>testcases.UIFunctionalityCheckOfLoanCalculatorTest@79da8dc5</td></tr>
+<tr>
+<td title='testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage.confiBrowser()'><b>confiBrowser</b><br>Test class: testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage<br>Parameters: edge</td>
+<td><div><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage.confiBrowser(UIFunctionalityCheckOfLoanTenureCalculatorPage.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1177682033", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1177682033'><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage.confiBrowser(UIFunctionalityCheckOfLoanTenureCalculatorPage.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>180</td>
+<td>testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage@1eb5174b</td></tr>
+<tr>
+<td title='testcases.UIFunctionalityCheckOfEmiCalculatorTest.confiBrowser()'><b>confiBrowser</b><br>Test class: testcases.UIFunctionalityCheckOfEmiCalculatorTest<br>Parameters: edge</td>
+<td><div><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.UIFunctionalityCheckOfEmiCalculatorTest.confiBrowser(UIFunctionalityCheckOfEmiCalculatorTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2143749218", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2143749218'><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.UIFunctionalityCheckOfEmiCalculatorTest.confiBrowser(UIFunctionalityCheckOfEmiCalculatorTest.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>23043</td>
+<td>testcases.UIFunctionalityCheckOfEmiCalculatorTest@c333c60</td></tr>
+<tr>
+<td title='testcases.HomeLoanTest.configBrowser()'><b>configBrowser</b><br>Test class: testcases.HomeLoanTest<br>Parameters: edge</td>
+<td><div><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.HomeLoanTest.configBrowser(HomeLoanTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1843587179", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1843587179'><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.HomeLoanTest.configBrowser(HomeLoanTest.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>180</td>
+<td>testcases.HomeLoanTest@11bd0f3b</td></tr>
+<tr>
+<td title='testcases.CarLoansTest.confiBrowser()'><b>confiBrowser</b><br>Test class: testcases.CarLoansTest<br>Parameters: edge</td>
+<td><div><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.CarLoansTest.confiBrowser(CarLoansTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace699352257", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace699352257'><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.CarLoansTest.confiBrowser(CarLoansTest.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>180</td>
+<td>testcases.CarLoansTest@69e1dd28</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.UIFunctionalityCheckOfEmiCalculatorTest.loanCalculatorObj()'><b>loanCalculatorObj</b><br>Test class: testcases.UIFunctionalityCheckOfEmiCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.UIFunctionalityCheckOfEmiCalculatorTest@c333c60</td></tr>
+<tr>
+<td title='testcases.UIFunctionalityCheckOfLoanCalculatorTest.loanCalculatorObj()'><b>loanCalculatorObj</b><br>Test class: testcases.UIFunctionalityCheckOfLoanCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.UIFunctionalityCheckOfLoanCalculatorTest@79da8dc5</td></tr>
+<tr>
+<td title='testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage.loanCalculatorObj()'><b>loanCalculatorObj</b><br>Test class: testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage</td>
+<td></td>
+<td>0</td>
+<td>testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage@1eb5174b</td></tr>
+<tr>
+<td title='testcases.CarLoansTest.HomePageObj()'><b>HomePageObj</b><br>Test class: testcases.CarLoansTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.CarLoansTest@69e1dd28</td></tr>
+<tr>
+<td title='testcases.UIFunctionalityCheckOfEmiCalculatorTest.loanCalculatorObj()'><b>loanCalculatorObj</b><br>Test class: testcases.UIFunctionalityCheckOfEmiCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.UIFunctionalityCheckOfEmiCalculatorTest@c333c60</td></tr>
+<tr>
+<td title='testcases.CarLoansTest.CloseBrowser()'><b>CloseBrowser</b><br>Test class: testcases.CarLoansTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.CarLoansTest@69e1dd28</td></tr>
+<tr>
+<td title='testcases.HomeLoanTest.HomePageObj()'><b>HomePageObj</b><br>Test class: testcases.HomeLoanTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.HomeLoanTest@11bd0f3b</td></tr>
+<tr>
+<td title='testcases.UIFunctionalityCheckOfLoanCalculatorTest.loanCalculatorObj()'><b>loanCalculatorObj</b><br>Test class: testcases.UIFunctionalityCheckOfLoanCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.UIFunctionalityCheckOfLoanCalculatorTest@79da8dc5</td></tr>
+<tr>
+<td title='testcases.UIFunctionalityCheckOfEmiCalculatorTest.CloseBrowser()'><b>CloseBrowser</b><br>Test class: testcases.UIFunctionalityCheckOfEmiCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.UIFunctionalityCheckOfEmiCalculatorTest@c333c60</td></tr>
+<tr>
+<td title='testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage.loanCalculatorObj()'><b>loanCalculatorObj</b><br>Test class: testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage</td>
+<td></td>
+<td>0</td>
+<td>testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage@1eb5174b</td></tr>
+<tr>
+<td title='testcases.CarLoansTest.HomePageObj()'><b>HomePageObj</b><br>Test class: testcases.CarLoansTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.CarLoansTest@69e1dd28</td></tr>
+<tr>
+<td title='testcases.HomeLoanTest.WriteExcelClass()'><b>WriteExcelClass</b><br>Test class: testcases.HomeLoanTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.HomeLoanTest@11bd0f3b</td></tr>
+<tr>
+<td title='testcases.CarLoansTest.HomePageObj()'><b>HomePageObj</b><br>Test class: testcases.CarLoansTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.CarLoansTest@69e1dd28</td></tr>
+<tr>
+<td title='testcases.HomeLoanTest.WriteExcelClass()'><b>WriteExcelClass</b><br>Test class: testcases.HomeLoanTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.HomeLoanTest@11bd0f3b</td></tr>
+<tr>
+<td title='testcases.HomeLoanTest.HomePageObj()'><b>HomePageObj</b><br>Test class: testcases.HomeLoanTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.HomeLoanTest@11bd0f3b</td></tr>
+<tr>
+<td title='testcases.UIFunctionalityCheckOfLoanCalculatorTest.loanCalculatorObj()'><b>loanCalculatorObj</b><br>Test class: testcases.UIFunctionalityCheckOfLoanCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.UIFunctionalityCheckOfLoanCalculatorTest@79da8dc5</td></tr>
+<tr>
+<td title='testcases.UIFunctionalityCheckOfEmiCalculatorTest.loanCalculatorObj()'><b>loanCalculatorObj</b><br>Test class: testcases.UIFunctionalityCheckOfEmiCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.UIFunctionalityCheckOfEmiCalculatorTest@c333c60</td></tr>
+<tr>
+<td title='testcases.HomeLoanTest.WriteExcelClass()'><b>WriteExcelClass</b><br>Test class: testcases.HomeLoanTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.HomeLoanTest@11bd0f3b</td></tr>
+<tr>
+<td title='testcases.HomeLoanTest.HomePageObj()'><b>HomePageObj</b><br>Test class: testcases.HomeLoanTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.HomeLoanTest@11bd0f3b</td></tr>
+<tr>
+<td title='testcases.UIFunctionalityCheckOfLoanCalculatorTest.CloseBrowser()'><b>CloseBrowser</b><br>Test class: testcases.UIFunctionalityCheckOfLoanCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.UIFunctionalityCheckOfLoanCalculatorTest@79da8dc5</td></tr>
+<tr>
+<td title='testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage.CloseBrowser()'><b>CloseBrowser</b><br>Test class: testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage</td>
+<td></td>
+<td>0</td>
+<td>testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage@1eb5174b</td></tr>
+<tr>
+<td title='testcases.CarLoansTest.HomePageObj()'><b>HomePageObj</b><br>Test class: testcases.CarLoansTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.CarLoansTest@69e1dd28</td></tr>
+<tr>
+<td title='testcases.HomeLoanTest.HomePageObj()'><b>HomePageObj</b><br>Test class: testcases.HomeLoanTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.HomeLoanTest@11bd0f3b</td></tr>
+<tr>
+<td title='testcases.HomeLoanTest.CloseBrowser()'><b>CloseBrowser</b><br>Test class: testcases.HomeLoanTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.HomeLoanTest@11bd0f3b</td></tr>
+<tr>
+<td title='testcases.HomeLoanTest.WriteExcelClass()'><b>WriteExcelClass</b><br>Test class: testcases.HomeLoanTest</td>
+<td></td>
+<td>0</td>
+<td>testcases.HomeLoanTest@11bd0f3b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.CarLoansTest.EnterNegativeValues()'><b>EnterNegativeValues</b><br>Test class: testcases.CarLoansTest</td>
+<td><div><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.CarLoansTest.confiBrowser(CarLoansTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace888278866", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace888278866'><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.CarLoansTest.confiBrowser(CarLoansTest.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>testcases.CarLoansTest@69e1dd28</td></tr>
+<tr>
+<td title='testcases.UIFunctionalityCheckOfLoanCalculatorTest.checkScaleChange()'><b>checkScaleChange</b><br>Test class: testcases.UIFunctionalityCheckOfLoanCalculatorTest</td>
+<td><div><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.UIFunctionalityCheckOfLoanCalculatorTest.confiBrowser(UIFunctionalityCheckOfLoanCalculatorTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1577380423", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1577380423'><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.UIFunctionalityCheckOfLoanCalculatorTest.confiBrowser(UIFunctionalityCheckOfLoanCalculatorTest.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>testcases.UIFunctionalityCheckOfLoanCalculatorTest@79da8dc5</td></tr>
+<tr>
+<td title='testcases.HomeLoanTest.enterHomeLoanAmount()'><b>enterHomeLoanAmount</b><br>Test class: testcases.HomeLoanTest</td>
+<td><div><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.HomeLoanTest.configBrowser(HomeLoanTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace461041439", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace461041439'><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.HomeLoanTest.configBrowser(HomeLoanTest.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>testcases.HomeLoanTest@11bd0f3b</td></tr>
+<tr>
+<td title='testcases.UIFunctionalityCheckOfEmiCalculatorTest.checkScaleChange()'><b>checkScaleChange</b><br>Test class: testcases.UIFunctionalityCheckOfEmiCalculatorTest</td>
+<td><div><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.UIFunctionalityCheckOfEmiCalculatorTest.confiBrowser(UIFunctionalityCheckOfEmiCalculatorTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace595509659", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace595509659'><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.UIFunctionalityCheckOfEmiCalculatorTest.confiBrowser(UIFunctionalityCheckOfEmiCalculatorTest.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>testcases.UIFunctionalityCheckOfEmiCalculatorTest@c333c60</td></tr>
+<tr>
+<td title='testcases.UIFunctionalityCheckOfEmiCalculatorTest.checkInputBoxIsEnable()'><b>checkInputBoxIsEnable</b><br>Test class: testcases.UIFunctionalityCheckOfEmiCalculatorTest</td>
+<td><div><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.UIFunctionalityCheckOfEmiCalculatorTest.confiBrowser(UIFunctionalityCheckOfEmiCalculatorTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace4972684", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace4972684'><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.UIFunctionalityCheckOfEmiCalculatorTest.confiBrowser(UIFunctionalityCheckOfEmiCalculatorTest.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>testcases.UIFunctionalityCheckOfEmiCalculatorTest@c333c60</td></tr>
+<tr>
+<td title='testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage.checkInputBoxIsEnable()'><b>checkInputBoxIsEnable</b><br>Test class: testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage</td>
+<td><div><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage.confiBrowser(UIFunctionalityCheckOfLoanTenureCalculatorPage.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1681782234", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1681782234'><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage.confiBrowser(UIFunctionalityCheckOfLoanTenureCalculatorPage.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage@1eb5174b</td></tr>
+<tr>
+<td title='testcases.HomeLoanTest.extractDataYear()'><b>extractDataYear</b><br>Test class: testcases.HomeLoanTest</td>
+<td><div><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.HomeLoanTest.configBrowser(HomeLoanTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1149556460", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1149556460'><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.HomeLoanTest.configBrowser(HomeLoanTest.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>testcases.HomeLoanTest@11bd0f3b</td></tr>
+<tr>
+<td title='testcases.CarLoansTest.enterCarLoanAmount()'><b>enterCarLoanAmount</b><br>Test class: testcases.CarLoansTest</td>
+<td><div><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.CarLoansTest.confiBrowser(CarLoansTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2103535823", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2103535823'><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.CarLoansTest.confiBrowser(CarLoansTest.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>testcases.CarLoansTest@69e1dd28</td></tr>
+<tr>
+<td title='testcases.UIFunctionalityCheckOfEmiCalculatorTest.checkSliderMoveOrNot()'><b>checkSliderMoveOrNot</b><br>Test class: testcases.UIFunctionalityCheckOfEmiCalculatorTest</td>
+<td><div><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.UIFunctionalityCheckOfEmiCalculatorTest.confiBrowser(UIFunctionalityCheckOfEmiCalculatorTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace681429581", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace681429581'><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.UIFunctionalityCheckOfEmiCalculatorTest.confiBrowser(UIFunctionalityCheckOfEmiCalculatorTest.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>testcases.UIFunctionalityCheckOfEmiCalculatorTest@c333c60</td></tr>
+<tr>
+<td title='testcases.CarLoansTest.checkLoanEMIAndInterestPayable()'><b>checkLoanEMIAndInterestPayable</b><br>Test class: testcases.CarLoansTest</td>
+<td><div><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.CarLoansTest.confiBrowser(CarLoansTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1116408538", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1116408538'><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.CarLoansTest.confiBrowser(CarLoansTest.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>testcases.CarLoansTest@69e1dd28</td></tr>
+<tr>
+<td title='testcases.CarLoansTest.chekDefaultCarLoanEMIValues()'><b>chekDefaultCarLoanEMIValues</b><br>Test class: testcases.CarLoansTest</td>
+<td><div><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.CarLoansTest.confiBrowser(CarLoansTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace451180469", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace451180469'><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.CarLoansTest.confiBrowser(CarLoansTest.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>testcases.CarLoansTest@69e1dd28</td></tr>
+<tr>
+<td title='testcases.UIFunctionalityCheckOfLoanCalculatorTest.checkSliderMoveOrNot()'><b>checkSliderMoveOrNot</b><br>Test class: testcases.UIFunctionalityCheckOfLoanCalculatorTest</td>
+<td><div><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.UIFunctionalityCheckOfLoanCalculatorTest.confiBrowser(UIFunctionalityCheckOfLoanCalculatorTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace592351327", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace592351327'><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.UIFunctionalityCheckOfLoanCalculatorTest.confiBrowser(UIFunctionalityCheckOfLoanCalculatorTest.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>testcases.UIFunctionalityCheckOfLoanCalculatorTest@79da8dc5</td></tr>
+<tr>
+<td title='testcases.UIFunctionalityCheckOfLoanCalculatorTest.checkInputBoxIsEnable()'><b>checkInputBoxIsEnable</b><br>Test class: testcases.UIFunctionalityCheckOfLoanCalculatorTest</td>
+<td><div><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.UIFunctionalityCheckOfLoanCalculatorTest.confiBrowser(UIFunctionalityCheckOfLoanCalculatorTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace311254587", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace311254587'><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.UIFunctionalityCheckOfLoanCalculatorTest.confiBrowser(UIFunctionalityCheckOfLoanCalculatorTest.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>testcases.UIFunctionalityCheckOfLoanCalculatorTest@79da8dc5</td></tr>
+<tr>
+<td title='testcases.HomeLoanTest.chekDefaultCarLoanEMIValues()'><b>chekDefaultCarLoanEMIValues</b><br>Test class: testcases.HomeLoanTest</td>
+<td><div><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.HomeLoanTest.configBrowser(HomeLoanTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace767202658", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace767202658'><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.HomeLoanTest.configBrowser(HomeLoanTest.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>testcases.HomeLoanTest@11bd0f3b</td></tr>
+<tr>
+<td title='testcases.HomeLoanTest.EnterNegativeValues()'><b>EnterNegativeValues</b><br>Test class: testcases.HomeLoanTest</td>
+<td><div><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.HomeLoanTest.configBrowser(HomeLoanTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace475349709", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace475349709'><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.HomeLoanTest.configBrowser(HomeLoanTest.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>testcases.HomeLoanTest@11bd0f3b</td></tr>
+<tr>
+<td title='testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage.checkSliderMoveOrNot()'><b>checkSliderMoveOrNot</b><br>Test class: testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage</td>
+<td><div><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage.confiBrowser(UIFunctionalityCheckOfLoanTenureCalculatorPage.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1961771601", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1961771601'><pre>java.lang.RuntimeException: WebDriver initialization failed
+	at base.Base.setupBrowser(Base.java:143)
+	at testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage.confiBrowser(UIFunctionalityCheckOfLoanTenureCalculatorPage.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>testcases.UIFunctionalityCheckOfLoanTenureCalculatorPage@1eb5174b</td></tr>
+</table><p>
+</body>
+</html>
