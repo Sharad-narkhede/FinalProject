@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Vibe Coding Contest</title>
+    <meta name="description" content="A vibrant coding challenge where creativity meets code. Join the Vibe Coding Contest and build something unforgettable." />
+
+    <meta property="og:title" content="Vibe Coding Contest" />
+    <meta property="og:description" content="A vibrant coding challenge where creativity meets code. Join the Vibe Coding Contest and build something unforgettable." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/" />
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23ff6ec7'/%3E%3Cstop offset='100%25' stop-color='%236d8cff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='46' fill='url(%23g)'/%3E%3Ctext x='50' y='60' font-size='52' text-anchor='middle' fill='white' font-family='monospace'%3E%7B%7D%3C/text%3E%3C/svg%3E" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <nav class="nav">
+        <div class="brand">
+          <span class="brand-icon" aria-hidden="true">⚡</span>
+          <span class="brand-text">Vibe</span>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☾</button>
+        <ul class="nav-links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#tracks">Tracks</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#prizes">Prizes</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="btn btn-primary" href="#submit">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="hero" class="hero section">
+        <div class="hero-bg"></div>
+        <div class="hero-content container">
+          <h1 class="glitch" data-text="Vibe Coding Contest">Vibe Coding Contest</h1>
+          <p class="tag">Where creativity meets code.</p>
+
+          <div class="countdown" aria-live="polite" aria-label="Countdown to contest start">
+            <div class="time"><span id="dd">00</span><label>Days</label></div>
+            <div class="time"><span id="hh">00</span><label>Hours</label></div>
+            <div class="time"><span id="mm">00</span><label>Minutes</label></div>
+            <div class="time"><span id="ss">00</span><label>Seconds</label></div>
+          </div>
+
+          <div class="cta">
+            <a class="btn btn-primary" href="#submit">Join the Vibe</a>
+            <a class="btn btn-ghost" href="#tracks">Explore Tracks</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section container">
+        <div class="grid two">
+          <div>
+            <h2>What makes this contest unique?</h2>
+            <p>
+              Vibe is a design-forward coding challenge. We celebrate playful interaction,
+              delightful UX, and accessible builds just as much as technical depth. Whether you're
+              composing generative visuals, crafting ultra-usable tools, or remixing data into art,
+              this is your stage.
+            </p>
+            <ul class="list">
+              <li>48 hours to ship a polished, original project</li>
+              <li>Judged on vibe, craft, accessibility, and originality</li>
+              <li>Solo or team of up to 4</li>
+            </ul>
+          </div>
+          <div>
+            <div class="glass card vibe-card">
+              <h3>Key Dates</h3>
+              <dl class="kv">
+                <dt>Kickoff</dt><dd>Dec 1, 2025 — 17:00 UTC</dd>
+                <dt>Submission</dt><dd>Dec 3, 2025 — 17:00 UTC</dd>
+                <dt>Showcase</dt><dd>Dec 6, 2025 — Live stream</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tracks" class="section container">
+        <h2>Pick your track</h2>
+        <div class="grid three">
+          <article class="card track" tabindex="0">
+            <h3>Web Vibes</h3>
+            <p>Craft a delightful web experience: micro-interactions, scroll stories, or helpful tools.</p>
+            <div class="tags"><span>UX</span><span>Animation</span><span>Perf</span></div>
+          </article>
+          <article class="card track" tabindex="0">
+            <h3>AI Grooves</h3>
+            <p>Build with AI responsibly: creative copilots, smart editors, or human-in-the-loop tools.</p>
+            <div class="tags"><span>LLM</span><span>Ethics</span><span>Agents</span></div>
+          </article>
+          <article class="card track" tabindex="0">
+            <h3>Open Source Rhythm</h3>
+            <p>Ship a lovable OSS component, CLI, or library with outstanding docs and DX.</p>
+            <div class="tags"><span>DX</span><span>Docs</span><span>Testing</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="schedule" class="section container">
+        <h2>Schedule</h2>
+        <ol class="timeline">
+          <li>
+            <div class="dot"></div>
+            <div class="content">
+              <h3>Kickoff + Brief</h3>
+              <p>Get the theme, rules, and Q&A. Teams form in public lobby.</p>
+            </div>
+          </li>
+          <li>
+            <div class="dot"></div>
+            <div class="content">
+              <h3>Build Sprint</h3>
+              <p>Focus time, mentor office hours, and optional mini-challenges.</p>
+            </div>
+          </li>
+          <li>
+            <div class="dot"></div>
+            <div class="content">
+              <h3>Submissions Close</h3>
+              <p>Freeze builds, attach demo link, and publish write-up.</p>
+            </div>
+          </li>
+          <li>
+            <div class="dot"></div>
+            <div class="content">
+              <h3>Showcase + Awards</h3>
+              <p>Top projects demo live. Community choice and jury prizes.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="prizes" class="section container">
+        <h2>Prizes</h2>
+        <div class="grid three">
+          <div class="card prize">
+            <h3>Grand Prize</h3>
+            <p>$3,000 + mentorship + feature showcase</p>
+          </div>
+          <div class="card prize">
+            <h3>Runner Up</h3>
+            <p>$1,500 + gear pack</p>
+          </div>
+          <div class="card prize">
+            <h3>Community Choice</h3>
+            <p>$1,000 + spotlight blog</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="rules" class="section container">
+        <h2>Rules</h2>
+        <ul class="list">
+          <li>Original work created during the contest window</li>
+          <li>Open-source dependencies are allowed with proper licenses</li>
+          <li>Be kind, inclusive, and follow the Code of Conduct</li>
+          <li>Ensure accessibility: keyboard nav, contrast, and readable content</li>
+        </ul>
+      </section>
+
+      <section id="faq" class="section container">
+        <h2>FAQ</h2>
+        <details class="faq">
+          <summary>Can I join solo or as a team?</summary>
+          <p>Yes. Teams up to 4, or go solo. You choose your vibe.</p>
+        </details>
+        <details class="faq">
+          <summary>Do I keep my IP?</summary>
+          <p>Yes. You own what you build. You grant us permission to showcase it.</p>
+        </details>
+        <details class="faq">
+          <summary>What can I submit?</summary>
+          <p>A live demo link and a short write-up with screenshots or video. Source code is optional.</p>
+        </details>
+      </section>
+
+      <section id="submit" class="section container">
+        <h2>Register your team</h2>
+        <form class="card form" action="#" method="get" onsubmit="return false">
+          <label>
+            <span>Team Name</span>
+            <input name="team" type="text" placeholder="Your team name" required />
+          </label>
+          <label>
+            <span>Contact Email</span>
+            <input name="email" type="email" placeholder="name@example.com" required />
+          </label>
+          <label>
+            <span>Track</span>
+            <select name="track" required>
+              <option value="Web Vibes">Web Vibes</option>
+              <option value="AI Grooves">AI Grooves</option>
+              <option value="Open Source Rhythm">Open Source Rhythm</option>
+            </select>
+          </label>
+          <button id="registerBtn" class="btn btn-primary" type="submit">Register</button>
+          <p class="form-note">No spam. We'll email you the kickoff link and updates.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container foot">
+        <p>© <span id="year"></span> Vibe Coding Contest</p>
+        <nav aria-label="Footer">
+          <a href="#rules">Code of Conduct</a>
+          <a href="#faq">Terms</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>
