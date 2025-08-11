@@ -6,7 +6,9 @@ const SELECTORS = {
   year: document.getElementById('year'),
   themeToggle: document.getElementById('themeToggle'),
   confettiCanvas: document.getElementById('confetti-canvas'),
-  registerBtn: document.getElementById('registerBtn')
+  registerBtn: document.getElementById('registerBtn'),
+  registerForm: document.getElementById('registerForm'),
+  formStatus: document.getElementById('formStatus')
 };
 
 // Set current year in footer
@@ -157,3 +159,39 @@ if (SELECTORS.registerBtn) {
     celebrate();
   });
 }
+
+// AJAX form submission to backend
+(function setupForm() {
+  const form = SELECTORS.registerForm;
+  if (!form) return;
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const submitBtn = SELECTORS.registerBtn;
+    const status = SELECTORS.formStatus;
+    status.textContent = '';
+
+    const formData = new FormData(form);
+    const payload = Object.fromEntries(formData.entries());
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Registering…';
+    try {
+      const res = await fetch('http://localhost:5050/api/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      const data = await res.json();
+      if (!res.ok || !data.ok) throw new Error(data.error || 'Request failed');
+      status.textContent = 'Registered! Check your email for updates.';
+      status.style.color = 'var(--success)';
+      form.reset();
+    } catch (err) {
+      status.textContent = `Error: ${err.message}`;
+      status.style.color = 'salmon';
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Register';
+    }
+  });
+})();

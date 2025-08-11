@@ -30,3 +30,27 @@ npx --yes serve -l 8080
 
 - Static hosting works anywhere (GitHub Pages, Netlify, Vercel, S3)
 - No build step required — just upload the three files
+
+## Backend (optional)
+
+To save registrations locally, run the Flask API alongside the static site.
+
+```bash
+cd /workspace/vibe-coding-contest
+pip3 install -r requirements.txt
+python3 app.py  # serves API at http://localhost:5050
+```
+
+The frontend posts to `http://localhost:5050/api/register` and saves entries to `registrations.csv`.
+
+## Backend (Node alternative)
+
+This repo also includes a Node/Express server that both serves the static site and handles registrations.
+
+```bash
+cd /workspace/vibe-coding-contest
+npm install
+npm run dev  # http://localhost:5050
+```
+
+The frontend will work out of the box since it posts to `http://localhost:5050/api/register`.

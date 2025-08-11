@@ -193,7 +193,7 @@
 
       <section id="submit" class="section container">
         <h2>Register your team</h2>
-        <form class="card form" action="#" method="get" onsubmit="return false">
+        <form id="registerForm" class="card form" action="#" method="get" onsubmit="return false">
           <label>
             <span>Team Name</span>
             <input name="team" type="text" placeholder="Your team name" required />
@@ -212,6 +212,7 @@
           </label>
           <button id="registerBtn" class="btn btn-primary" type="submit">Register</button>
           <p class="form-note">No spam. We'll email you the kickoff link and updates.</p>
+          <p id="formStatus" class="form-note" role="status" aria-live="polite"></p>
         </form>
       </section>
     </main>
