@@ -60,3 +60,14 @@ class SurveyAssignmentOut(BaseModel):
     class Config:
         from_attributes = True
 
+class SurveyAssignmentWithTemplateOut(BaseModel):
+    id: int
+    template_id: int
+    target_id: int
+    target_type: TargetType
+    anonymity_min_responses: int
+    template: SurveyTemplateOut
+
+    class Config:
+        from_attributes = True
+

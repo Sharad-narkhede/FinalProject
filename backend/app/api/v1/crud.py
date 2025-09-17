@@ -15,7 +15,7 @@ from app.schemas.survey import (
     SurveyAssignmentCreate,
     SurveyAssignmentOut,
 )
-from app.schemas.survey import SurveyTemplateDetailOut
+from app.schemas.survey import SurveyTemplateDetailOut, SurveyAssignmentWithTemplateOut
 
 
 router = APIRouter(prefix="/crud", tags=["crud"])
@@ -101,4 +101,12 @@ def get_template(template_id: int, db: Session = Depends(get_db), user=Depends(g
     # Eager load questions by accessing property
     tpl.questions  # noqa
     return tpl
+
+
+@router.get("/assignments/active", response_model=List[SurveyAssignmentWithTemplateOut])
+def list_active_assignments(db: Session = Depends(get_db), user=Depends(get_current_user)):
+    assigns = db.query(SurveyAssignment).filter(SurveyAssignment.is_active.is_(True)).all()
+    for a in assigns:
+        a.template  # ensure loaded
+    return assigns
 
