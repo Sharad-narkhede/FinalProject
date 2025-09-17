@@ -2,6 +2,7 @@ import { AppBar, Box, Button, Container, IconButton, Toolbar, Typography } from 
 import MenuIcon from '@mui/icons-material/Menu'
 import { Link as RouterLink, Outlet, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
+import DarkModeSwitch from './ThemeToggle'
 
 export default function Layout() {
   const navigate = useNavigate()
@@ -18,6 +19,7 @@ export default function Layout() {
           <Button component={RouterLink} to="/dashboard" color="inherit">Dashboard</Button>
           <Button component={RouterLink} to="/surveys" color="inherit">Surveys</Button>
           <Button component={RouterLink} to="/admin" color="inherit">Admin</Button>
+          <DarkModeSwitch />
           {user ? (
             <Button onClick={() => { logout(); navigate('/login') }} color="inherit">Logout</Button>
           ) : (

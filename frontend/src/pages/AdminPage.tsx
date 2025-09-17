@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Box, Button, Card, CardContent, CircularProgress, Divider, Grid, MenuItem, TextField, Typography } from '@mui/material'
 import { apiAuth } from '../services/api'
+import { saveAs } from 'file-saver'
 
 export default function AdminPage() {
   const [name, setName] = useState('Faculty Teaching Template')
@@ -83,6 +84,33 @@ export default function AdminPage() {
                   <Typography variant="body2">{t.name} · {t.target_type}</Typography>
                 </Box>
               ))}
+              <Box sx={{ mt: 2 }}>
+                <Typography variant="subtitle2">Exports</Typography>
+                <Button size="small" variant="outlined" onClick={async () => {
+                  // naive: export first active assignment
+                  const { data } = await apiAuth().get('/api/v1/crud/assignments/active')
+                  const a = data?.[0]
+                  if (!a) return alert('No active assignments')
+                  const res = await apiAuth().get(`/api/v1/analytics/export/${a.id}`, { responseType: 'blob' })
+                  const blob = new Blob([res.data], { type: 'text/csv;charset=utf-8;' })
+                  const filename = `assignment_${a.id}.csv`
+                  // @ts-ignore
+                  if (window.navigator && window.navigator.msSaveOrOpenBlob) {
+                    // IE fallback
+                    // @ts-ignore
+                    window.navigator.msSaveOrOpenBlob(blob, filename)
+                  } else {
+                    // @ts-ignore
+                    const url = window.URL.createObjectURL(blob)
+                    const link = document.createElement('a')
+                    link.href = url
+                    link.setAttribute('download', filename)
+                    document.body.appendChild(link)
+                    link.click()
+                    link.parentNode?.removeChild(link)
+                  }
+                }}>Export Latest CSV</Button>
+              </Box>
             </CardContent>
           </Card>
         </Grid>

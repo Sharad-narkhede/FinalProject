@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from app.api.v1 import auth, crud, feedback
+from app.api.v1 import auth, crud, feedback, analytics
 
 
 router = APIRouter()
@@ -12,4 +12,5 @@ def health() -> dict:
 router.include_router(auth.router)
 router.include_router(crud.router)
 router.include_router(feedback.router)
+router.include_router(analytics.router)
 

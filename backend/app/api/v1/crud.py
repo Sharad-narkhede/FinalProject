@@ -2,7 +2,7 @@ from typing import List
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 
-from app.api.deps import get_current_user
+from app.api.deps import get_current_user, require_admin
 from app.db.session import get_db
 from app.models.department import Department
 from app.models.facility import Facility
@@ -22,7 +22,7 @@ router = APIRouter(prefix="/crud", tags=["crud"])
 
 
 @router.post("/departments", response_model=DepartmentOut)
-def create_department(payload: DepartmentCreate, db: Session = Depends(get_db), user=Depends(get_current_user)):
+def create_department(payload: DepartmentCreate, db: Session = Depends(get_db), user=Depends(require_admin)):
     dep = Department(name=payload.name)
     db.add(dep)
     db.commit()
@@ -36,7 +36,7 @@ def list_departments(db: Session = Depends(get_db), user=Depends(get_current_use
 
 
 @router.post("/facilities", response_model=FacilityOut)
-def create_facility(payload: FacilityCreate, db: Session = Depends(get_db), user=Depends(get_current_user)):
+def create_facility(payload: FacilityCreate, db: Session = Depends(get_db), user=Depends(require_admin)):
     fac = Facility(name=payload.name, type=payload.type, location=payload.location)
     db.add(fac)
     db.commit()
@@ -50,7 +50,7 @@ def list_facilities(db: Session = Depends(get_db), user=Depends(get_current_user
 
 
 @router.post("/templates", response_model=SurveyTemplateOut)
-def create_template(payload: SurveyTemplateCreate, db: Session = Depends(get_db), user=Depends(get_current_user)):
+def create_template(payload: SurveyTemplateCreate, db: Session = Depends(get_db), user=Depends(require_admin)):
     exists = db.query(SurveyTemplate).filter(SurveyTemplate.name == payload.name).first()
     if exists:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Template name exists")
@@ -70,7 +70,7 @@ def list_templates(db: Session = Depends(get_db), user=Depends(get_current_user)
 
 
 @router.post("/assignments", response_model=SurveyAssignmentOut)
-def create_assignment(payload: SurveyAssignmentCreate, db: Session = Depends(get_db), user=Depends(get_current_user)):
+def create_assignment(payload: SurveyAssignmentCreate, db: Session = Depends(get_db), user=Depends(require_admin)):
     tpl = db.get(SurveyTemplate, payload.template_id)
     if not tpl:
         raise HTTPException(status_code=404, detail="Template not found")

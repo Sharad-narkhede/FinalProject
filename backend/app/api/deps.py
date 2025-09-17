@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, Iterable
 from fastapi import Depends, HTTPException, status
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from sqlalchemy.orm import Session
@@ -7,6 +7,7 @@ from app.core.config import get_settings
 from app.core.security import decode_access_token
 from app.db.session import get_db
 from app.models.user import User
+from app.models.enums import UserRole
 
 
 auth_scheme = HTTPBearer(auto_error=False)
@@ -28,4 +29,19 @@ def get_current_user(
     if not user or not user.is_active:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Inactive user")
     return user
+
+
+def require_roles(roles: Iterable[UserRole]):
+    def role_checker(current: User = Depends(get_current_user)) -> User:
+        if current.role not in roles:
+            raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Insufficient permissions")
+        return current
+
+    return role_checker
+
+
+def require_admin(current: User = Depends(get_current_user)) -> User:
+    if current.role != UserRole.admin:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Admin only")
+    return current
 
