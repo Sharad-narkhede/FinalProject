@@ -8,6 +8,8 @@ class Settings(BaseSettings):
     backend_port: int = 8000
     database_url: str
     environment: str = "development"
+    secret_key: str = "change-me-in-prod"
+    access_token_expire_minutes: int = 60
 
     class Config:
         env_file = ".env"
