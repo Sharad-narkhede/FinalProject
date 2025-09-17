@@ -36,6 +36,9 @@ def on_startup() -> None:
     db_url = get_settings().database_url
     if not db_url.startswith("sqlite"):
         run_migrations(db_url)
+    else:
+        # For SQLite local dev, ensure tables are created
+        Base.metadata.create_all(bind=engine)
     with SessionLocal() as db:
         seed(db)
 
