@@ -1,6 +1,6 @@
 from datetime import datetime
 from sqlalchemy import Boolean, Column, DateTime, Enum, ForeignKey, Integer, String
-from sqlalchemy.dialects.postgresql import JSONB
+from sqlalchemy import JSON
 from sqlalchemy.orm import relationship
 from app.models.base import Base
 from app.models.enums import QuestionType, TargetType
@@ -25,7 +25,7 @@ class SurveyQuestion(Base):
     template_id = Column(Integer, ForeignKey("survey_templates.id"), nullable=False, index=True)
     text = Column(String(1000), nullable=False)
     type = Column(Enum(QuestionType), nullable=False)
-    options = Column(JSONB, nullable=True)
+    options = Column(JSON, nullable=True)
     weight = Column(Integer, nullable=True)
 
     template = relationship("SurveyTemplate", back_populates="questions")

@@ -32,8 +32,10 @@ def root() -> dict:
 
 @app.on_event("startup")
 def on_startup() -> None:
-    # Run Alembic migrations to ensure schema is up to date
-    run_migrations(get_settings().database_url)
+    # Run Alembic migrations to ensure schema is up to date (skip for SQLite file)
+    db_url = get_settings().database_url
+    if not db_url.startswith("sqlite"):
+        run_migrations(db_url)
     with SessionLocal() as db:
         seed(db)
 
