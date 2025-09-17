@@ -6,6 +6,8 @@ from app.core.config import get_settings
 from app.db.session import engine, SessionLocal
 from app.models import Base  # noqa: F401
 from app.seed import seed
+from app.core.config import get_settings
+from app.db.migrate import run_migrations
 
 
 settings = get_settings()
@@ -30,8 +32,8 @@ def root() -> dict:
 
 @app.on_event("startup")
 def on_startup() -> None:
-    # Ensure tables exist for a smooth first run (use Alembic for production)
-    Base.metadata.create_all(bind=engine)
+    # Run Alembic migrations to ensure schema is up to date
+    run_migrations(get_settings().database_url)
     with SessionLocal() as db:
         seed(db)
 

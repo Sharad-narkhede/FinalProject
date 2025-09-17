@@ -53,6 +53,26 @@ make up
 - Frontend: http://localhost:5173
 - Postgres: localhost:5432
 
+Run without Docker
+
+Backend
+
+```bash
+python -m venv .venv && source .venv/bin/activate
+pip install -r backend/requirements.txt
+cp .env.example .env
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000 --app-dir backend
+```
+
+Frontend
+
+```bash
+cd frontend
+npm i
+npm run dev
+# If needed, export VITE_API_BASE=http://localhost:8000
+```
+
 Common commands
 
 ```bash
@@ -68,4 +88,15 @@ Notes
 
 - Initial scaffolding focuses on structure. Subsequent steps will add models, routes, and UI.
 - Alembic migrations folder is created; migration scripts will be added once models are defined.
+
+Environment
+
+- SECRET_KEY: set a strong secret in `.env`.
+- DATABASE_URL: update if you don't use Docker Postgres.
+
+Authentication
+
+- Login with the seeded admin: `admin@example.com` / `admin123`.
+- Visit `/admin` to create templates, departments, and facilities.
+
 
