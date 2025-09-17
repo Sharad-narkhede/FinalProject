@@ -1,0 +1,30 @@
+# General
+.DS_Store
+*.log
+*.tmp
+*.swp
+*.swo
+node_modules/
+dist/
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Python build
+build/
+wheelhouse/
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+
+# Docker
+*.pid
+*.pid.lock
+docker-data/
+
