@@ -1,9 +1,11 @@
 import { AppBar, Box, Button, Container, IconButton, Toolbar, Typography } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import { Link as RouterLink, Outlet, useNavigate } from 'react-router-dom'
+import { useAuth } from '../context/AuthContext'
 
 export default function Layout() {
   const navigate = useNavigate()
+  const { user, logout } = useAuth()
 
   return (
     <Box display="flex" flexDirection="column" minHeight="100vh">
@@ -16,7 +18,11 @@ export default function Layout() {
           <Button component={RouterLink} to="/dashboard" color="inherit">Dashboard</Button>
           <Button component={RouterLink} to="/surveys" color="inherit">Surveys</Button>
           <Button component={RouterLink} to="/admin" color="inherit">Admin</Button>
-          <Button onClick={() => navigate('/login')} color="inherit">Login</Button>
+          {user ? (
+            <Button onClick={() => { logout(); navigate('/login') }} color="inherit">Logout</Button>
+          ) : (
+            <Button onClick={() => navigate('/login')} color="inherit">Login</Button>
+          )}
         </Toolbar>
       </AppBar>
       <Container sx={{ py: 3, flexGrow: 1 }}>

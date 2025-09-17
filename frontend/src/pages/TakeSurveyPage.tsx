@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useSearchParams } from 'react-router-dom'
 import { apiAuth } from '../services/api'
 import { Box, Button, Card, CardContent, FormControlLabel, Radio, RadioGroup, TextField, Typography } from '@mui/material'
 
@@ -10,8 +10,9 @@ export default function TakeSurveyPage() {
   const [questions, setQuestions] = useState<Question[]>([])
   const [template, setTemplate] = useState<{ id: number; name: string } | null>(null)
   const [answers, setAnswers] = useState<Record<number, any>>({})
-  const assignmentId = 1
-  const targetId = 1
+  const [params] = useSearchParams()
+  const assignmentId = Number(params.get('assignment'))
+  const targetId = Number(params.get('target'))
 
   useEffect(() => {
     if (!id) return
